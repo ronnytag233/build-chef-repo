@@ -4,11 +4,11 @@
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
-include_recipe 'luxoft_docker'
+include_recipe 'luxoft_docker::install'
 
 # Pull latest Jenkins image
 docker_image 'jenkins' do
-  tag node['luxoft_docker_jenkins']['docker']['tag']
+  tag node['luxoft_docker_jenkins']['tag']
   action :pull
 end
 
@@ -20,8 +20,8 @@ end
 
 # Run container for jenkins
 docker_container 'jenkins' do
-  tag node['luxoft_docker_jenkins']['docker']['tag']
-  port node['luxoft_docker_jenkins']['docker']['port']
+  tag node['luxoft_docker_jenkins']['tag']
+  port node['luxoft_docker_jenkins']['port']
   restart_policy 'always'
   volumes 'myjenkins:/var/jenkins_home'
 end
