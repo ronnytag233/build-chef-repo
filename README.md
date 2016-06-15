@@ -66,16 +66,22 @@ cd build-chef-repo/cookbooks/luxoft-<build system here>
 
 Each build system will have a unique URL. 
 
-Current List:
+## Current List:
 
-Jenkins
+**Jenkins**
+
 Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-jenkins
+
 Local URL for Jenkins: http://jenkins.vagrant:8080/
+
 Documentation on Jenkins: https://jenkins.io/doc/
 
-Docker Registry
+**Docker Registry**
+
 Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-docker
+
 Local URL for Docker Registry: http://registry.vagrant:5050/
+
 Documentation on Docker Registry: https://docs.docker.com/registry/
 
 This is under construction and more additions will be available soon.
