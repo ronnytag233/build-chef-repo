@@ -38,6 +38,8 @@ Training Materials for Chef: https://learn.chef.io/
 
 After installations are complete you are ready to bring up the environment.
 
+### Setting up build-chef-repo
+
 ```$ mkdir src```
 
 ```$ cd src```
@@ -52,6 +54,7 @@ Option 2 - Will prompt for GitHub username and password, enter when prompted.
 
 ```$ https://github.com/luxoft-devops/build-chef-repo.git```
 
+### Starting up a Vagrant VM
 
 cd build-chef-repo/cookbooks/luxoft-<build system here>
 
@@ -61,10 +64,14 @@ cd build-chef-repo/cookbooks/luxoft-<build system here>
 
 *NOTE: The `vagrant up` command may ask for your password because it runs a `sudo` command.*
 
-Each build system will have a unique URL: 
+Each build system will have a unique URL. 
+
+Current List:
 
 Jenkins
 http://jenkins.vagrant:8080/
+
+Documentation on Jenkins: https://jenkins.io/doc/
 
 This is under construction and more additions will be available soon.
 
