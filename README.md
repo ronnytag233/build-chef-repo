@@ -66,7 +66,7 @@ cd build-chef-repo/cookbooks/luxoft-<build system here>
 
 Each build system will have a unique URL. 
 
-## Current List:
+### Current List:
 
 **Jenkins**
 
@@ -86,6 +86,8 @@ Documentation on Docker Registry: https://docs.docker.com/registry/
 
 This is under construction and more additions will be available soon.
 
+### Helpful Vagrant Commands
+
 If you would like to update a running environment
 
 ```$ vagrant provision```
@@ -97,3 +99,5 @@ If you want to stop the environment but keep it around for later
 If you want to destroy the environment
 
 ```$ vagrant destroy```
+
+You will need to confirm destroy after command is issued.
