@@ -1,0 +1,34 @@
+required_plugins = %w( landrush )
+required_plugins.each do |plugin|
+  system "vagrant plugin install #{plugin}" unless Vagrant.has_plugin? plugin
+end
+
+Vagrant.configure('2') do |config|
+
+  config.vm.provider 'virtualbox' do |v|
+    v.customize ['modifyvm', :id, '--natdnshostresolver1', 'on']
+    v.memory = 2048
+    v.cpus = 2
+  end
+
+  #TODO create our own vagrant boxes
+
+  config.vm.define 'default' do |default|
+    default.vm.box_url =
+      'https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box'
+    default.vm.box = 'trusty-server-cloudimg-amd64-vagrant-disk1.box'
+    default.vm.hostname = 'jenkins.vagrant'
+    default.landrush.enabled = true
+    default.landrush.tld = 'vagrant'
+    default.landrush.host 'jenkins.vagrant'
+    default.landrush.guest_redirect_dns = false
+    default.vm.provision :chef_solo do |chef|
+      chef.channel = 'stable'
+      chef.version = '12.5.1'
+      chef.cookbooks_path = '../../cookbooks'
+      chef.add_recipe 'luxoft_docker_jenkins::default'
+      chef.json = {}
+    end
+  end
+
+end
