@@ -1,1 +1,76 @@
-# build-chef-repo
+#Build systems demos
+
+## PreReqs
+
+### Install GIT
+
+http://sourceforge.net/projects/git-osx-installer/files/git-2.8.1-intel-universal-mavericks.dmg/download?use_mirror=autoselect
+
+Documentation for GIT: https://git-scm.com/downloads
+
+Training Materials for GIT: https://try.github.io
+
+### Register for GitHub
+
+https://github.com/join?source=header-home
+
+Setting up SSH keys for GitHub is ideal but not required.
+
+Setting up SSH Documentation: https://help.github.com/articles/generating-an-ssh-key/
+
+### Install Vagrant
+
+https://www.vagrantup.com/downloads.html
+
+Documentation for Vagrant: https://www.vagrantup.com/docs/
+
+### Install VirtualBox
+
+https://www.virtualbox.org/wiki/Downloads
+
+Documentation for Virtualbox: https://www.virtualbox.org/manual/UserManual.html
+
+### Install chef-dk
+
+https://downloads.chef.io/chef-dk/
+
+Training Materials for Chef: https://learn.chef.io/
+
+After installations are complete you are ready to bring up the environment.
+
+```$ mkdir src```
+
+```$ cd src```
+
+If you setup SSH for your GitHub user, use command option 1 if not use option 2.
+Option 1
+```$ git clone git@github.com:luxoft-bigdata/bda-chef-repo.git```
+Option 2 - Will prompt for GitHub username and password, enter when prompted.
+```$ https://github.com/luxoft-devops/build-chef-repo.git``
+
+
+cd build-chef-repo/cookbooks/luxoft-<build system here>
+```$ cd build-chef-repo/cookbooks/luxoft-jenkins```
+
+```$ vagrant up```
+
+*NOTE: The `vagrant up` command may ask for your password because it runs a `sudo` command.*
+
+Each build system will have a unique URL: 
+
+Jenkins
+http://jenkins.vagrant:8080/
+
+This is under construction and more additions will be available soon.
+
+If you would like to update a running environment
+
+```$ vagrant provision```
+
+If you want to stop the environment but keep it around for later
+
+```$ vagrant suspend```
+
+If you want to destroy the environment
+
+```$ vagrant destroy```
