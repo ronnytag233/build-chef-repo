@@ -43,13 +43,18 @@ After installations are complete you are ready to bring up the environment.
 ```$ cd src```
 
 If you setup SSH for your GitHub user, use command option 1 if not use option 2.
+
 Option 1
+
 ```$ git clone git@github.com:luxoft-bigdata/bda-chef-repo.git```
+
 Option 2 - Will prompt for GitHub username and password, enter when prompted.
-```$ https://github.com/luxoft-devops/build-chef-repo.git``
+
+```$ https://github.com/luxoft-devops/build-chef-repo.git```
 
 
 cd build-chef-repo/cookbooks/luxoft-<build system here>
+
 ```$ cd build-chef-repo/cookbooks/luxoft-jenkins```
 
 ```$ vagrant up```
