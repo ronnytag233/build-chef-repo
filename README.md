@@ -4,9 +4,9 @@
 
 ### Install GIT
 
-http://sourceforge.net/projects/git-osx-installer/files/git-2.8.1-intel-universal-mavericks.dmg/download?use_mirror=autoselect
+https://git-scm.com/downloads
 
-Documentation for GIT: https://git-scm.com/downloads
+Documentation for GIT: https://git-scm.com/documentation
 
 Training Materials for GIT: https://try.github.io
 
