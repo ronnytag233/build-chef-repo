@@ -48,7 +48,7 @@ If you setup SSH for your GitHub user, use command option 1 if not use option 2.
 
 Option 1
 
-```$ git clone git@github.com:luxoft-bigdata/bda-chef-repo.git```
+```$ git clone git@github.com:luxoft-devops/build-chef-repo.git```
 
 Option 2 - Will prompt for GitHub username and password, enter when prompted.
 
@@ -69,9 +69,14 @@ Each build system will have a unique URL.
 Current List:
 
 Jenkins
-http://jenkins.vagrant:8080/
-
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-jenkins
+Local URL for Jenkins: http://jenkins.vagrant:8080/
 Documentation on Jenkins: https://jenkins.io/doc/
+
+Docker Registry
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-docker
+Local URL for Docker Registry: http://registry.vagrant:5050/
+Documentation on Docker Registry: https://docs.docker.com/registry/
 
 This is under construction and more additions will be available soon.
 
