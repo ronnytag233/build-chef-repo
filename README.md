@@ -68,13 +68,21 @@ Each build system will have a unique URL.
 
 ### Current List:
 
-**Jenkins**
+**Bamboo**
 
-Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-jenkins
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_bamboo
 
-Local URL for Jenkins: http://jenkins.vagrant:8080/
+Local URL for Bamboo: http://bamboo.vagrant:8085/
 
-Documentation on Jenkins: https://jenkins.io/doc/
+Documentation on Bamboo: https://confluence.atlassian.com/bamboo/bamboo-documentation-home-289276551.html
+
+**Bitbucket**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_bitbucket
+
+Local URL for Bitbucket: http://bitbucket.vagrant:7990/
+
+Documentation on Bitbucket: https://confluence.atlassian.com/bitbucketserver/bitbucket-server-documentation-home-776639749.html
 
 **Docker Registry**
 
@@ -83,6 +91,30 @@ Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-docker
 Local URL for Docker Registry: http://registry.vagrant:5050/
 
 Documentation on Docker Registry: https://docs.docker.com/registry/
+
+**GoCD**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_gocd
+
+Local URL for GoCD: http://gocd.vagrant:8153/
+
+Documentation on JIRA: https://docs.go.cd/current/
+
+**Jenkins**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_jenkins
+
+Local URL for Jenkins: http://jenkins.vagrant:8080/
+
+Documentation on Jenkins: https://jenkins.io/doc/
+
+**JIRA**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_jira
+
+Local URL for JIRA: http://jira.vagrant:8080/
+
+Documentation on JIRA: https://confluence.atlassian.com/jira/jira-documentation-1556.html
 
 This is under construction and more additions will be available soon.
 
