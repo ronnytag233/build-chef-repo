@@ -92,6 +92,14 @@ Local URL for Docker Registry: http://registry.vagrant:5050/
 
 Documentation on Docker Registry: https://docs.docker.com/registry/
 
+**GoCD**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_gocd
+
+Local URL for GoCD: http://gocd.vagrant:8153/
+
+Documentation on JIRA: https://docs.go.cd/current/
+
 **Jenkins**
 
 Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_jenkins
