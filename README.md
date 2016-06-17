@@ -68,9 +68,18 @@ Each build system will have a unique URL.
 
 ### Current List:
 
+**BitBucket**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_bitbucket
+
+Local URL for Bitbucket: http://bitbucket.vagrant:7990/
+
+Documentation on : https://confluence.atlassian.com/bitbucketserver/bitbucket-server-documentation-home-776639749.html
+
+
 **Jenkins**
 
-Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft-jenkins
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_jenkins
 
 Local URL for Jenkins: http://jenkins.vagrant:8080/
 
