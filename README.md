@@ -68,6 +68,14 @@ Each build system will have a unique URL.
 
 ### Current List:
 
+**Bamboo**
+
+Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_bamboo
+
+Local URL for Bitbucket: http://bamboo.vagrant:8085/
+
+Documentation on : https://confluence.atlassian.com/bamboo/bamboo-documentation-home-289276551.html
+
 **BitBucket**
 
 Directory for Vagrant Up: buildchef-repo/cookbooks/luxoft_docker_bitbucket
