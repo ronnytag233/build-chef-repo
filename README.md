@@ -1,3 +1,4 @@
+TEST
 #Build systems demos
 
 ## PreReqs
